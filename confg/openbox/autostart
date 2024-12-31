@@ -1,0 +1,12 @@
+xrandr --output HDMI-0  --mode 1366x768 --pos 0x0 --output eDP-1-1 --auto --pos 1366x0 &
+tint2 &
+conky &
+nitrogen --restore &
+xscreensaver &
+polybar &
+~/.config/polybar/launch.sh  --shapes &
+picom --config /home/cris/.config/picom/picom.conf &
+
+
+
+

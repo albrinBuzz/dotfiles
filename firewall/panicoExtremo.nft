@@ -1,0 +1,51 @@
+#!/usr/sbin/nft -f
+#
+############################################
+# Script nft v1.0                          #
+# José Luis Sánchez                        #
+# https://www.mytcpip.com                  #
+# Fichero: /root/fw/reglas.nft             #
+#                                          #
+# Definición script                        #
+# =================                        #
+# - Solo IPv4                              #
+# - Política por defecto DROP              #
+# - Permitir acceso ssh al servidor desde  #
+#   cualquier máquina de la red local      #
+# - Permitir tráfico udp de salida 53      #
+# - Permitir tráfico tcp de salida 22,     #
+#   80, 443                                #
+#                                          #
+# En todos los casos añadimos counter al   #
+# final para saber el tráfico asociado a   #
+# cada regla.                              #
+#                                          #
+# Ejecutar el script con la orden:         #
+#                                          #
+# nft -f nombredelscript                   #
+#                                          #
+############################################
+
+# Declaramos variables que utilizamos en el script
+
+define udpSI = { 53 }
+define tcpSI = { 443,80 }
+
+# Borramos cualquier regla establecida en el sistema
+
+flush ruleset
+
+# Declaramos la tabla "filtrado" asociada a la familia "ip"
+# Por lo tanto estamos solo aplicando estas reglas a IPv4
+
+add table ip filtrado
+
+
+# Establecemos política por defecto DROP en las cadenas input, output y forward
+# asociadas a la tabla filtrado
+
+add chain ip filtrado INPUT   { type filter hook input priority 0; policy drop; }
+add chain ip filtrado FORWARD { type filter hook forward priority 0; policy drop; }
+add chain ip filtrado OUTPUT  { type filter hook output priority 0; policy drop; }
+
+

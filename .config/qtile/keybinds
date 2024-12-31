@@ -1,0 +1,57 @@
+W=windos
+A=alt
+C=control
+S=shift
+
+
+W+enter: abrir la terminal
+W+f: abrir brave
+W+x: abrir vs code
+W+r: abrir rofi(buscar apps)
+W+v: abrir pavucontrol(control de audio)
+
+moverse entre ventanas
+
+
+W+i: ir a la ventana de arriba
+
+W+k: ir a la ventana de abajo
+
+W+j: ir a la ventana de la izquierda
+
+W+l: ir la ventana de la derecha
+
+
+
+mover las ventanas
+
+W+A+i: mover la venta hacia arriba
+
+W+A+k: mover la venta hacia abajo
+
+
+W+A+j: mover la venta hacia la izquierda
+
+W+A+l: mover la venta hacia la derecha
+
+
+desplazar las ventanas
+
+W+C+i: agranda la venta hacia arriba
+
+W+C+k: agranda la venta hacia abajo
+
+W+C+j: agranda la venta hacia la izquierda
+
+W+C+j: agranda la venta hacia la derecha
+
+
+extras
+
+W+q: cierra una ventana
+
+W+tab: full screen de la pestaña 
+
+W+C+q: cierra qtile
+
+W+C+r: reinicia qtile

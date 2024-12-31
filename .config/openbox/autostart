@@ -1,0 +1,14 @@
+#xrandr --output DP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-3 --mode 1366x768 --pos 1920x0 &
+xrandr --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output HDMI-3 --mode 1920x1080 --pos 1920x0 --rotate normal &
+tint2 &
+conky &
+nitrogen --restore &
+xscreensaver &
+~/.config/polybar/rainbow/launch.sh &
+#/home/cris/rainbow.sh &
+picom --config /home/cris/.config/picom/picom.conf &
+/usr/libexec/polkit-gnome-authentication-agent-1 &  
+
+
+
+

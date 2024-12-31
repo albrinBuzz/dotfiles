@@ -1,0 +1,5 @@
+sudo iptables -A INPUT -p tcp --dport 8080 -s 152.3.220.166 -j ACCEPT
+
+sudo iptables -A INPUT -p tcp --dport 22 -s 152.3.220.166 -j ACCEPT
+
+sudo iptables -A INPUT -p tcp --dport 25 -s 152.3.220.166 -j ACCEPT

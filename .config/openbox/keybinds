@@ -1,0 +1,63 @@
+W=windos
+A=alt
+C=control
+S=shift
+
+
+keybids para abrir apps
+
+W+t: abre tilix
+W+f: abre firefox
+W+x: abre vs code
+W+v: abre pavucontrol
+
+keybids para workflow
+
+desplazar las pestañas
+W+arriba: achica la pestaña hacia arriba
+W+↓ : achica la pestaña hacia abajo 
+w+→ : desplaza  la pestaña hacia la derecha 
+W+← : desplaza la pestaña hacia la izquierda
+
+
+mover las pestañas
+
+W+A+arriba: mueve la pesta hacia arriba
+W+A+↓: mueve la pestaña hacia abajo
+
+W+A+←: mueve la pestaña hacia la derecha
+
+W+A+→: mueve la pestaña hacia la izquierda
+
+
+dezplazamiento y movimineto
+
+C+arriba : agranda la pestaña hacia arriba
+
+C+↓: agranda la pestaña hacia abajo
+
+C+←: agranda la pestaña hacia la izquierda 
+
+C+→: agranda la pestaña hacia la derecha
+
+
+
+C+A+arriba: achica la pestaña hacia arriba
+
+C+A+↓: achica la pestaña hacia abajo
+
+C+A+←: achica la pestaña hacia la izquierda
+
+C+A+→: achica la pestaña hacia la derecha
+
+
+extras 
+
+A+arriba: full screen de una pestaña 
+
+W+C+v: divide de manera equitativa dos ventanas
+
+W+q: cierrra una ventana
+
+
+

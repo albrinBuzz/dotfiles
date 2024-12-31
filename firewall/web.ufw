@@ -1,0 +1,8 @@
+<ufw full="true" >
+ <defaults ipv6="no" loglevel="off" incoming="allow" outgoing="deny"/>
+ <rules>
+  <rule protocol="tcp" direction="in" v6="False" action="allow" dapp="WWW Full" logtype=""/>
+  <rule direction="in" v6="False" action="allow" dapp="DNS" logtype=""/>
+ </rules>
+ <modules enabled="nf_conntrack_pptp nf_nat_pptp nf_conntrack_netbios_ns" />
+</ufw>
